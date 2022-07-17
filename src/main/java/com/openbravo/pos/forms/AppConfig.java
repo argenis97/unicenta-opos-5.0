@@ -266,8 +266,7 @@ public class AppConfig implements AppProperties {
     m_propsconfig.setProperty("override.check", "false");
     m_propsconfig.setProperty("override.pin", "");
 
-    m_propsconfig.setProperty("db.driverlib", new File(new File(dirname)
-            , "mysql-connector-java-5.1.39.jar").getAbsolutePath());
+    m_propsconfig.setProperty("db.driverlib", new File(new File(dirname),"mysql-connector-java-5.1.39.jar").getAbsolutePath());
     m_propsconfig.setProperty("db.engine", "MySQL");
     m_propsconfig.setProperty("db.driver", "com.mysql.jdbc.Driver");
 
@@ -283,7 +282,8 @@ public class AppConfig implements AppProperties {
     m_propsconfig.setProperty("db1.name", "");
     m_propsconfig.setProperty("db1.URL", "jdbc:mysql://localhost:3306/");
     m_propsconfig.setProperty("db1.schema", "unicentaopos");
-    m_propsconfig.setProperty("db1.options", "?zeroDateTimeBehavior=convertToNull");
+//    m_propsconfig.setProperty("db1.options", "?zeroDateTimeBehavior=convertToNull");
+    m_propsconfig.setProperty("db1.options", "?zeroDateTimeBehavior=convertToNull&autoReconnect=true&useSSL=false");
     m_propsconfig.setProperty("db1.user", "");
     m_propsconfig.setProperty("db1.password", "");
 

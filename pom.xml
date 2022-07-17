@@ -306,7 +306,6 @@
           <artifactId>slf4j-api</artifactId>
         </exclusion>
       </exclusions>
-
     </dependency>
     <dependency>
       <groupId>org.swinglabs.swingx</groupId>
@@ -431,10 +430,8 @@
           <groupId>org.slf4j</groupId>
           <artifactId>slf4j-simple</artifactId>
         </exclusion>
-
       </exclusions>
     </dependency>
-
     <dependency>
       <groupId>javax.persistence</groupId>
       <artifactId>persistence-api</artifactId>
@@ -535,6 +532,13 @@
       <version>3.2.0</version>
       <type>maven-plugin</type>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/junit/junit -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version>
+<!--      <scope>test</scope>-->
+    </dependency>
   </dependencies>
   <repositories>
     <repository>
@@ -563,10 +567,10 @@
       <url>https://jcenter.bintray.com</url>
     </repository>
     <repository>
-      <url>https://download.java.net/maven/2/</url>
       <id>restapi</id>
-      <layout>default</layout>
       <name>Repository for library Library[restapi]</name>
+      <url>https://download.java.net/maven/2/</url>
+      <layout>default</layout>
     </repository>
   </repositories>
 
