@@ -380,6 +380,7 @@
     </dependency>
     <dependency>
       <groupId>io.posapps</groupId>
+<!--      <groupId>io.posapps.posapps-client</groupId>-->
       <artifactId>posapps-client</artifactId>
       <version>1.4.9</version>
       <classifier>exe</classifier>
@@ -463,6 +464,7 @@
       <groupId>com.sleepycat</groupId>
       <artifactId>je</artifactId>
       <version>5.0.73</version>
+<!--      <version>18.3.12</version>-->
     </dependency>
     <dependency>
       <groupId>org.pushingpixels</groupId>
